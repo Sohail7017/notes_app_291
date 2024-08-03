@@ -10,7 +10,7 @@ class NotesAddPage extends StatelessWidget{
       appBar: AppBar(
 
         backgroundColor: Color(0xff222433),
-        title: Text('Notes',style: TextStyle(fontSize: 35,color: Colors.white,fontWeight: FontWeight.bold)),
+        title: Text('Notes Add',style: TextStyle(fontSize: 35,color: Colors.white,fontWeight: FontWeight.bold)),
 
       ),
       body: Container(
@@ -65,6 +65,7 @@ class NotesAddPage extends StatelessWidget{
                 ),
                 
                 child: TextField(
+                  maxLines: 4,
                   style: TextStyle(fontSize: 20,color: Colors.white),
                   controller: desController,
                   cursorColor: Colors.white,

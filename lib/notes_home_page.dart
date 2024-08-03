@@ -4,7 +4,7 @@ import 'package:flutter_app/notes_add_page.dart';
 import 'package:flutter_app/notes_second_page.dart';
 
 class NotesHomePage extends StatelessWidget{
-  List<Map<String,dynamic>> notesData = [
+  /*List<Map<String,dynamic>> notesData = [
     {
       'Tittle' : 'Task',
       'Description' : 'Daily Meeting & Learn Module 2',
@@ -29,7 +29,7 @@ class NotesHomePage extends StatelessWidget{
       'Tittle' : 'Team Meeting',
       'Description' : 'Planning sprint log for next product design update.',
     },
-  ];
+  ];*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +61,15 @@ class NotesHomePage extends StatelessWidget{
         width: double.infinity,
         height: double.infinity,
         color: Color(0xff222433),
-        child: ListView.builder(
+         child: Column(
+           children: [
+             SizedBox(
+               height: 330,
+             ),
+             Text('Not data yet',style: TextStyle(fontSize: 18,color: Colors.white),)
+           ],
+         ),
+         /*ListView.builder(
 
             itemCount: notesData.length,
             itemBuilder: (_,index){
@@ -100,7 +108,9 @@ class NotesHomePage extends StatelessWidget{
               ),
             ),
           );
-        }),
+        }),*/
+
+
       ),
       floatingActionButton: FloatingActionButton(onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context){
