@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class NotesSecondPage extends StatelessWidget{
-  String Tittle;
-  String Description;
-  NotesSecondPage({required this .Tittle,required this.Description});
+  String tittle;
+  String desc;
+  NotesSecondPage({required this .tittle,required this.desc});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,11 +24,11 @@ class NotesSecondPage extends StatelessWidget{
               SizedBox(
                 height: 50,
               ),
-              Text(Tittle,style: TextStyle(fontSize: 28,color: Colors.white,fontWeight: FontWeight.bold),),
+              Text(tittle,style: TextStyle(fontSize: 28,color: Colors.white,fontWeight: FontWeight.bold),),
             SizedBox(
               height: 20,
             ),
-            Text(Description,style: TextStyle(fontSize: 18,color: Colors.white,fontWeight: FontWeight.bold))
+            Text(desc,style: TextStyle(fontSize: 18,color: Colors.white,fontWeight: FontWeight.bold))
             ],
           ),
         ),
