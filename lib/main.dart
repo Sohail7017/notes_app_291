@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/notes_add_page.dart';
 import 'package:flutter_app/notes_home_page.dart';
 import 'package:flutter_app/notes_second_page.dart';
+import 'package:flutter_app/notes_update_page.dart';
 
 void main (){
   runApp(myApp());
