@@ -77,8 +77,8 @@ class _NotesHomePageState extends State<NotesHomePage> {
 
                       showModalBottomSheet(context: context, builder: (_)
                       {
-                          /*titleController.text = allNotes[index][DbHelper.tableColumnTittle];
-                          descController.text = allNotes[index][DbHelper.tableColumnDesc];*/
+                          titleController.text = allNotes[index][DbHelper.tableColumnTittle];
+                          descController.text = allNotes[index][DbHelper.tableColumnDesc];
                         return Container(
                           width: double.infinity,
                           decoration: BoxDecoration(

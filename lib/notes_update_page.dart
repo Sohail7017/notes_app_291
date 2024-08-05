@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class NotesAddPage extends StatelessWidget{
+class NotesUpdatePage extends StatelessWidget{
   TextEditingController tittleController = TextEditingController();
   TextEditingController desController = TextEditingController();
   @override
@@ -10,7 +10,7 @@ class NotesAddPage extends StatelessWidget{
       appBar: AppBar(
 
         backgroundColor: Color(0xff222433),
-        title: Text('Add Note',style: TextStyle(fontSize: 35,color: Colors.white,fontWeight: FontWeight.bold)),
+        title: Text('Update Note',style: TextStyle(fontSize: 35,color: Colors.white,fontWeight: FontWeight.bold)),
 
       ),
       body: Container(
@@ -33,8 +33,9 @@ class NotesAddPage extends StatelessWidget{
                 width: 380,
                 height: 80,
                 decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(10)
+                    color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(10),
+                  border: Border.all(width: 2,color: Colors.white)
                 ),
 
                 child: TextField(
@@ -43,9 +44,9 @@ class NotesAddPage extends StatelessWidget{
                   cursorColor: Colors.white,
                   decoration: InputDecoration(
 
-                    hintText: 'Enter your tittle.......',
-                    hintStyle: TextStyle(fontSize: 14,color: Colors.white),
-                    border: OutlineInputBorder(borderSide: BorderSide.none)
+                      hintText: 'Enter your tittle.......',
+                      hintStyle: TextStyle(fontSize: 14,color: Colors.white),
+                      border: OutlineInputBorder(borderSide: BorderSide.none)
                   ),
                 ),
               ),
@@ -60,10 +61,11 @@ class NotesAddPage extends StatelessWidget{
                 width: 380,
                 height: 150,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10)
+                    color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(10),
+                  border: Border.all(width: 2,color: Colors.white)
                 ),
-                
+
                 child: TextField(
                   maxLines: 4,
                   style: TextStyle(fontSize: 20,color: Colors.white),
@@ -87,12 +89,12 @@ class NotesAddPage extends StatelessWidget{
                       width: 70,
                       height: 40,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4)
+                          borderRadius: BorderRadius.circular(4)
                       ),
-                      child: Center(child: Text('Add',style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.bold),))),style: ElevatedButton.styleFrom(backgroundColor: Colors.white.withOpacity(0.1)),),
-                SizedBox(
-                  width: 50,
-                ),
+                      child: Center(child: Text('Update',style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.bold),))),style: ElevatedButton.styleFrom(backgroundColor: Colors.white.withOpacity(0.1)),),
+                  SizedBox(
+                    width: 50,
+                  ),
                   ElevatedButton(onPressed: (){}, child: Container(
                       width: 70,
                       height: 40,
